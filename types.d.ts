@@ -17,10 +17,6 @@ interface Data {
   };
 }
 
-interface EnergyChartProps {
-  data: { fuel: string; perc: number }[];
-}
-
 interface EnergyCardProps {
   key?: number;
   fuel?: string;

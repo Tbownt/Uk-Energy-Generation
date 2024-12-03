@@ -4,7 +4,7 @@
     "test": "jest --watchAll",
     "start": "webpack-dev-server --hot --progress",
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",

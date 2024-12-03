@@ -34,19 +34,19 @@ const Dashboard = () => {
 
       <div className="flex flex-col gap-2 items-center mb-2">
         <p className="text-2xl text-slate-500">
-          From: {new Date(data.from).toLocaleString()}
+          From: {new Date(data.data.from).toLocaleString()}
         </p>
         <p className="text-2xl text-slate-500">
-          To: {new Date(data.to).toLocaleDateString()}
+          To: {new Date(data.data.to).toLocaleDateString()}
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 mb-6">
         <div className="lg:self-center flex-1 max-w-lg mx-auto">
-          <EnergyChart data={data.generationmix} />
+          <EnergyChart data={data.data.generationmix} />
         </div>
 
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {data.generationmix.map((source: GenerationMix, index: number) => (
+          {data.data.generationmix.map((source: any, index: number) => (
             <EnergyCard
               key={index}
               fuel={source.fuel}

@@ -3,6 +3,10 @@ import { Doughnut } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 Chart.register(ArcElement, Tooltip, Legend);
 
+interface EnergyChartProps {
+  data: any;
+}
+
 const EnergyChart = ({ data }: EnergyChartProps) => {
   const chartData = {
     labels: data.map(

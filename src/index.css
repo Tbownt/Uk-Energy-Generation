@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(assets/fonts/Poppins-Regular.ttf) format("ttf");
+  }
+}
+
+canvas {
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  canvas {
+    height: 350px;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  canvas {
+    height: 400px;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  canvas {
+    height: 500px;
+    width: 60%;
+  }
+}
